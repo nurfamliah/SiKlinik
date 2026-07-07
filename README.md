@@ -78,9 +78,8 @@ sistem-klinik/
 
 ## Screenshot
 
-_(tempel screenshot aplikasi di sini setelah dijalankan)_
+<img width="1902" height="1020" alt="image" src="https://github.com/user-attachments/assets/217f56c5-961e-41ff-a1fc-e5c914b0f1bb" />
 
-- `assets/screenshot-dashboard.png` — Halaman Dashboard
 - `assets/screenshot-pasien.png` — Modul Data Pasien
 - `assets/screenshot-rekam-medis.png` — Modul Rekam Medis
 
