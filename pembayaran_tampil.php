@@ -17,6 +17,7 @@ if (!$hasil) {
     echo "Query gagal: " . mysqli_error($conn);
 } else {
 ?>
+<div class="table-responsive">
 <table class="table table-bordered table-striped">
     <thead>
     <tr>
@@ -62,4 +63,5 @@ if (!$hasil) {
     <?php } ?>
     </tbody>
 </table>
+</div>
 <?php } ?>
