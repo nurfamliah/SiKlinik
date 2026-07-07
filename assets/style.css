@@ -175,3 +175,21 @@ body {
 .btn-icon i {
     font-size: 16px;
 }
+
+/* ==== TAMBAHAN BARU: tabel responsif, khusus buat layar sempit/split-screen ==== */
+.table-responsive {
+    margin-bottom: 0;
+}
+
+.table-responsive table {
+    min-width: 600px; /* jaga supaya kolom tidak terlalu gepeng di layar sempit */
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #c9d3dd;
+    border-radius: 4px;
+}
