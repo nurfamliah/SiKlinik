@@ -1,0 +1,29 @@
+# Dependency / package manager
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# Environment & konfigurasi sensitif
+.env
+.env.local
+
+# File upload user (foto dokter), biarkan foldernya tapi jangan commit isinya
+assets/foto_dokter/*
+!assets/foto_dokter/.gitkeep
+
+# Log & cache
+*.log
+*.cache
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# File editor
+.vscode/
+.idea/
+*.swp
+
+# Backup file database (kalau ada export lokal)
+*.sql.bak

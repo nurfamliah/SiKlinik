@@ -1,0 +1,177 @@
+/* style.css - CSS tambahan untuk Sistem Klinik */
+/* Bootstrap dipakai untuk komponen utama, ini cuma tambahan kecil */
+
+body {
+    background-color: #f4f6f9;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: #0d6efd;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: flex-basis 0.3s ease, max-width 0.3s ease, width 0.3s ease;
+    overflow-x: hidden;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.sidebar a i {
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #0b5ed7;
+}
+
+.sidebar a.active {
+    background-color: #0a58ca;
+    font-weight: bold;
+}
+
+.sidebar-logout {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* ==== TAMBAHAN BARU: sidebar bisa dibuka/tutup ==== */
+.sidebar.sidebar-collapsed {
+    flex: 0 0 72px;
+    max-width: 72px;
+}
+
+.sidebar.sidebar-collapsed a {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.sidebar.sidebar-collapsed a i {
+    margin-right: 0;
+    font-size: 18px;
+}
+
+.sidebar.sidebar-collapsed .menu-text {
+    display: none;
+}
+
+/* konten utama otomatis melebar kalau sidebar lagi ditutup */
+#sidebar-klinik.sidebar-collapsed + div {
+    flex: 1 1 auto !important;
+    max-width: calc(100% - 72px) !important;
+    transition: max-width 0.3s ease;
+}
+
+/* tombol buka/tutup sidebar di header */
+.btn-toggle-sidebar {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-toggle-sidebar:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.card-dashboard {
+    text-align: center;
+    padding: 20px;
+}
+
+.foto-dokter {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.login-box {
+    max-width: 400px;
+    margin: 80px auto;
+}
+
+.login-header {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    padding: 35px 20px 30px;
+}
+
+.login-icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+}
+
+/* ==== TAMBAHAN BARU: style untuk header topbar ==== */
+.topbar {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    min-height: 55px;
+}
+
+/* ==== TAMBAHAN/PENGGANTI: style header & footer full width menyatu sidebar ==== */
+.main-header {
+    background-color: #0d6efd;
+    min-height: 55px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.main-footer {
+    background-color: #0d6efd;
+}
+
+/* sidebar sedikit dirapikan karena sudah tidak ada judul di dalamnya */
+.sidebar {
+    padding-top: 20px;
+}
+
+/* ==== TAMBAHAN BARU: tabel simetris & tombol aksi berbentuk ikon ==== */
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.aksi-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.btn-icon {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    line-height: 1;
+}
+
+.btn-icon i {
+    font-size: 16px;
+}
